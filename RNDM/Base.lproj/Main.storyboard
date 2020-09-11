@@ -10,10 +10,109 @@
         <!--RNDM-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="r8i-ql-Cqz" customClass="CustomSegmentedControl" customModule="RNDM" customModuleProvider="target">
+                                <rect key="frame" x="10" y="54" width="394" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="funny"/>
+                                    <segment title="serious"/>
+                                    <segment title="crazy"/>
+                                    <segment title="popular"/>
+                                </segments>
+                                <color key="tintColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedSegmentTintColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorForNormal">
+                                        <color key="value" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorForSelected">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="cCK-Lm-Jyi" eventType="valueChanged" id="iPr-cP-Iz0"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZHT-cz-rYt">
+                                <rect key="frame" x="10" y="95" width="394" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="thoughtCell" rowHeight="82" id="aNd-l7-E6c" customClass="ThoughtCell" customModule="RNDM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aNd-l7-E6c" id="kmA-AR-kGt">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PtT-TQ-X2R">
+                                                    <rect key="frame" x="0.0" y="5" width="80.333333333333329" height="18"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cey-5d-6Q4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOI-dL-1XM">
+                                                            <rect key="frame" x="47.333333333333336" y="0.0" width="33.000000000000007" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jh-hF-RPg">
+                                                    <rect key="frame" x="0.0" y="28" width="394" height="25"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wMI-70-Knc">
+                                                    <rect key="frame" x="0.0" y="58" width="68" height="19"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starIconFilled" translatesAutoresizingMaskIntoConstraints="NO" id="DnB-AR-bbL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="19"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS4-AX-fQY">
+                                                            <rect key="frame" x="35" y="0.0" width="33" height="19"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Jh-hF-RPg" firstAttribute="leading" secondItem="kmA-AR-kGt" secondAttribute="leading" id="6ai-i7-sZc"/>
+                                                <constraint firstItem="PtT-TQ-X2R" firstAttribute="top" secondItem="kmA-AR-kGt" secondAttribute="top" constant="5" id="FbN-HS-APf"/>
+                                                <constraint firstItem="PtT-TQ-X2R" firstAttribute="leading" secondItem="kmA-AR-kGt" secondAttribute="leading" id="MVb-RC-TcT"/>
+                                                <constraint firstItem="4Jh-hF-RPg" firstAttribute="top" secondItem="PtT-TQ-X2R" secondAttribute="bottom" constant="5" id="Qdl-7F-XKg"/>
+                                                <constraint firstAttribute="bottom" secondItem="wMI-70-Knc" secondAttribute="bottom" constant="5" id="fJm-cu-Wo1"/>
+                                                <constraint firstItem="wMI-70-Knc" firstAttribute="top" secondItem="4Jh-hF-RPg" secondAttribute="bottom" constant="5" id="nbL-TN-OgN"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Jh-hF-RPg" secondAttribute="trailing" id="sQN-U6-r0T"/>
+                                                <constraint firstItem="wMI-70-Knc" firstAttribute="leading" secondItem="kmA-AR-kGt" secondAttribute="leading" id="tG1-G6-1xy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likesImg" destination="DnB-AR-bbL" id="VqL-mG-m3t"/>
+                                            <outlet property="numLikesLbl" destination="zS4-AX-fQY" id="YEC-sG-Mj0"/>
+                                            <outlet property="thoughtTxtLbl" destination="4Jh-hF-RPg" id="JGy-do-v9C"/>
+                                            <outlet property="timestampLbl" destination="hOI-dL-1XM" id="2FX-Qi-1FF"/>
+                                            <outlet property="usernameLbl" destination="cey-5d-6Q4" id="OGM-rZ-Sq1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -26,20 +125,24 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="r8i-ql-Cqz" id="p5o-DK-xZD"/>
+                        <outlet property="tableView" destination="ZHT-cz-rYt" id="4j3-ee-i7j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="137"/>
+            <point key="canvasLocation" x="921.73913043478262" y="136.95652173913044"/>
         </scene>
-        <!--View Controller-->
+        <!--Add ThoughtVC-->
         <scene sceneID="Saa-yZ-PNY">
             <objects>
-                <viewController id="cCK-Lm-Jyi" sceneMemberID="viewController">
+                <viewController id="cCK-Lm-Jyi" customClass="AddThoughtVC" customModule="RNDM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKd-lk-KIg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hon-ry-r6g">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hon-ry-r6g" customClass="CustomSegmentedControl" customModule="RNDM" customModuleProvider="target">
                                 <rect key="frame" x="10" y="54" width="394" height="32"/>
                                 <segments>
                                     <segment title="funny"/>
@@ -48,14 +151,28 @@
                                 </segments>
                                 <color key="tintColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="selectedSegmentTintColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorForNormal">
+                                        <color key="value" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorForSelected">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="cCK-Lm-Jyi" eventType="valueChanged" id="aUT-2i-Edn"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anw-uc-2M9">
                                 <rect key="frame" x="15" y="95" width="384" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWK-9D-2W1" customClass="RoundButton" customModule="RNDM" customModuleProvider="target">
-                                <rect key="frame" x="142" y="263" width="130" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWK-9D-2W1" customClass="RoundButton" customModule="RNDM" customModuleProvider="target">
+                                <rect key="frame" x="142" y="263" width="130" height="38"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="9cm-R2-S1j"/>
@@ -69,15 +186,18 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="postPressed:" destination="cCK-Lm-Jyi" eventType="touchUpInside" id="wbw-wU-fRH"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hci-hj-H4X">
                                 <rect key="frame" x="10" y="123" width="394" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Poq-e7-Wpk"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -87,6 +207,7 @@
                             <constraint firstItem="zNH-sO-J0h" firstAttribute="trailing" secondItem="anw-uc-2M9" secondAttribute="trailing" constant="15" id="6LU-fp-ukg"/>
                             <constraint firstItem="hci-hj-H4X" firstAttribute="top" secondItem="anw-uc-2M9" secondAttribute="bottom" constant="10" id="ABA-Bl-8JP"/>
                             <constraint firstItem="zNH-sO-J0h" firstAttribute="trailing" secondItem="hci-hj-H4X" secondAttribute="trailing" constant="10" id="DMY-RL-SUB"/>
+                            <constraint firstItem="PWK-9D-2W1" firstAttribute="top" secondItem="hci-hj-H4X" secondAttribute="bottom" constant="12" id="GDe-wb-5xS"/>
                             <constraint firstItem="Hon-ry-r6g" firstAttribute="leading" secondItem="zNH-sO-J0h" secondAttribute="leading" constant="10" id="eCl-Zy-269"/>
                             <constraint firstItem="anw-uc-2M9" firstAttribute="top" secondItem="Hon-ry-r6g" secondAttribute="bottom" constant="10" id="eij-bI-DcZ"/>
                             <constraint firstItem="anw-uc-2M9" firstAttribute="leading" secondItem="zNH-sO-J0h" secondAttribute="leading" constant="15" id="gih-aq-T9P"/>
@@ -97,6 +218,12 @@
                         <viewLayoutGuide key="safeArea" id="zNH-sO-J0h"/>
                     </view>
                     <navigationItem key="navigationItem" id="h0C-VJ-n07"/>
+                    <connections>
+                        <outlet property="categorySegment" destination="Hon-ry-r6g" id="Jjh-Vh-sqA"/>
+                        <outlet property="postBtn" destination="PWK-9D-2W1" id="Yjj-sb-t51"/>
+                        <outlet property="thoughtsTxt" destination="hci-hj-H4X" id="jQp-no-b8E"/>
+                        <outlet property="usernameTxt" destination="anw-uc-2M9" id="kds-rD-h1O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1o-7G-QvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,5 +258,6 @@
     </scenes>
     <resources>
         <image name="addThoughtIcon" width="21" height="24"/>
+        <image name="starIconFilled" width="20" height="19"/>
     </resources>
 </document>

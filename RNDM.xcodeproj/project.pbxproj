@@ -7,28 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30849E36250B7E1D003BACE4 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30849E35250B7E1D003BACE4 /* Thought.swift */; };
+		30849E38250B7FAF003BACE4 /* ThoughtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30849E37250B7FAF003BACE4 /* ThoughtCell.swift */; };
 		30879D5025090741007E0BE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879D4F25090741007E0BE3 /* AppDelegate.swift */; };
 		30879D5225090741007E0BE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879D5125090741007E0BE3 /* SceneDelegate.swift */; };
-		30879D5425090741007E0BE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879D5325090741007E0BE3 /* ViewController.swift */; };
+		30879D5425090741007E0BE3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879D5325090741007E0BE3 /* MainVC.swift */; };
 		30879D5725090741007E0BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30879D5525090741007E0BE3 /* Main.storyboard */; };
 		30879D5925090742007E0BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30879D5825090742007E0BE3 /* Assets.xcassets */; };
 		30879D5C25090742007E0BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30879D5A25090742007E0BE3 /* LaunchScreen.storyboard */; };
 		30879D64250908E0007E0BE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30879D63250908E0007E0BE3 /* GoogleService-Info.plist */; };
 		30879D6725091650007E0BE3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879D6625091650007E0BE3 /* RoundButton.swift */; };
+		30879D9E250B6A37007E0BE3 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879D9D250B6A37007E0BE3 /* CustomSegmentedControl.swift */; };
+		30879DA2250B6EC3007E0BE3 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879DA1250B6EC3007E0BE3 /* AddThoughtVC.swift */; };
+		30879DA5250B75BB007E0BE3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879DA4250B75BB007E0BE3 /* Categories.swift */; };
+		30879DA8250B7712007E0BE3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30879DA7250B7712007E0BE3 /* Constants.swift */; };
 		980EC2C9F793ED97F7629A4A /* Pods_RNDM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9659D1F39532E4AA2F73A3D0 /* Pods_RNDM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30849E35250B7E1D003BACE4 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		30849E37250B7FAF003BACE4 /* ThoughtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoughtCell.swift; sourceTree = "<group>"; };
 		30879D4C25090741007E0BE3 /* RNDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30879D4F25090741007E0BE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30879D5125090741007E0BE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30879D5325090741007E0BE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30879D5325090741007E0BE3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		30879D5625090741007E0BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30879D5825090742007E0BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30879D5B25090742007E0BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30879D5D25090742007E0BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30879D63250908E0007E0BE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30879D6625091650007E0BE3 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		30879D9D250B6A37007E0BE3 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		30879DA1250B6EC3007E0BE3 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
+		30879DA4250B75BB007E0BE3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		30879DA7250B7712007E0BE3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9659D1F39532E4AA2F73A3D0 /* Pods_RNDM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2027559ECD34FF245AECC97 /* Pods-RNDM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.debug.xcconfig"; path = "Target Support Files/Pods-RNDM/Pods-RNDM.debug.xcconfig"; sourceTree = "<group>"; };
 		E0DB1D5058ABA06C663D372F /* Pods-RNDM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDM.release.xcconfig"; path = "Target Support Files/Pods-RNDM/Pods-RNDM.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,10 +79,13 @@
 		30879D4E25090741007E0BE3 /* RNDM */ = {
 			isa = PBXGroup;
 			children = (
+				30879DA6250B7707007E0BE3 /* Utilities */,
+				30879DA3250B75A3007E0BE3 /* Enums */,
+				30879DA0250B6E98007E0BE3 /* Model */,
+				30879D9F250B6E8B007E0BE3 /* Controller */,
 				30879D6525091629007E0BE3 /* View */,
 				30879D4F25090741007E0BE3 /* AppDelegate.swift */,
 				30879D5125090741007E0BE3 /* SceneDelegate.swift */,
-				30879D5325090741007E0BE3 /* ViewController.swift */,
 				30879D5525090741007E0BE3 /* Main.storyboard */,
 				30879D5825090742007E0BE3 /* Assets.xcassets */,
 				30879D5A25090742007E0BE3 /* LaunchScreen.storyboard */,
@@ -84,8 +99,43 @@
 			isa = PBXGroup;
 			children = (
 				30879D6625091650007E0BE3 /* RoundButton.swift */,
+				30879D9D250B6A37007E0BE3 /* CustomSegmentedControl.swift */,
+				30849E37250B7FAF003BACE4 /* ThoughtCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		30879D9F250B6E8B007E0BE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				30879D5325090741007E0BE3 /* MainVC.swift */,
+				30879DA1250B6EC3007E0BE3 /* AddThoughtVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		30879DA0250B6E98007E0BE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30849E35250B7E1D003BACE4 /* Thought.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30879DA3250B75A3007E0BE3 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				30879DA4250B75BB007E0BE3 /* Categories.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		30879DA6250B7707007E0BE3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				30879DA7250B7712007E0BE3 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		553D52ABA1D98F433F39F5F4 /* Frameworks */ = {
@@ -221,10 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30849E36250B7E1D003BACE4 /* Thought.swift in Sources */,
+				30879DA2250B6EC3007E0BE3 /* AddThoughtVC.swift in Sources */,
+				30879DA5250B75BB007E0BE3 /* Categories.swift in Sources */,
 				30879D6725091650007E0BE3 /* RoundButton.swift in Sources */,
-				30879D5425090741007E0BE3 /* ViewController.swift in Sources */,
+				30879D5425090741007E0BE3 /* MainVC.swift in Sources */,
+				30849E38250B7FAF003BACE4 /* ThoughtCell.swift in Sources */,
 				30879D5025090741007E0BE3 /* AppDelegate.swift in Sources */,
+				30879D9E250B6A37007E0BE3 /* CustomSegmentedControl.swift in Sources */,
 				30879D5225090741007E0BE3 /* SceneDelegate.swift in Sources */,
+				30879DA8250B7712007E0BE3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
