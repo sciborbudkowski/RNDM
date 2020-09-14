@@ -19,7 +19,7 @@
                                 <rect key="frame" x="10" y="54" width="394" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="funny"/>
+                                    <segment title="funny" width="97.75"/>
                                     <segment title="serious"/>
                                     <segment title="crazy"/>
                                     <segment title="popular"/>
@@ -38,6 +38,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="categoryCHANGED:" destination="BYZ-38-t0r" eventType="valueChanged" id="Xh4-px-7sO"/>
                                     <action selector="categoryChanged:" destination="cCK-Lm-Jyi" eventType="valueChanged" id="iPr-cP-Iz0"/>
                                 </connections>
                             </segmentedControl>
